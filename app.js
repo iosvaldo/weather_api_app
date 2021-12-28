@@ -1,4 +1,4 @@
-
+er
 const express = require("express");
 const https = require("https");
 const bodyParser = require("body-parser");
@@ -14,7 +14,7 @@ app.get("/", function(req,res){
 
 app.post("/", function(req,res){
   const query = req.body.cityName;
-  const apiKey = "f8d8cd93a5b4392338d1e7f928224f50";
+  const apiKey = "ENTER_API_HERE";
   const unit = "imperial";
   const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKey + "&units=" + unit;
 
